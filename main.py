@@ -6,19 +6,19 @@ import pkgutil
 import plot_types
 import data_processing
 
-# Автоматическое формирование plot_functions
+# Automatic formation of plot_functions
 plot_functions = {}
 for loader, module_name, is_pkg in pkgutil.iter_modules(plot_types.__path__):
     module = importlib.import_module(f'plot_types.{module_name}')
     if hasattr(module, 'process_and_plot'):
         plot_functions[module_name] = module.process_and_plot
 
-# Автоматическое формирование data_loaders
+# Automatic formation of data_loaders
 data_loaders = {}
 for loader, module_name, is_pkg in pkgutil.iter_modules(data_processing.__path__):
     module = importlib.import_module(f'data_processing.{module_name}')
     if hasattr(module, 'load_and_preprocess'):
-        # Ключ - имя файла без data_loader_ (например, csv, excel, json)
+    # Key - filename without data_loader_ (e.g., csv, excel, json)
         key = module_name.replace('data_loader_', '')
         data_loaders[key] = module.load_and_preprocess
 

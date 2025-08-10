@@ -1,2 +1,2 @@
 # __init__.py
-# Позволяет импортировать data_processing как пакет
+# Allows importing data_processing as a package

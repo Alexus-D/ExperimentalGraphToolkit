@@ -2,7 +2,7 @@
 import pandas as pd
 
 def load_and_preprocess(file_path):
-    # Загрузка и предобработка JSON
+    # Loading and preprocessing JSON
     data = pd.read_json(file_path)
-    # Здесь ваша специфическая обработка
+    # Here is your specific processing
     return data

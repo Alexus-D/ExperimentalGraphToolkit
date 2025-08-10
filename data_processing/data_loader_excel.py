@@ -2,7 +2,7 @@
 import pandas as pd
 
 def load_and_preprocess(file_path):
-    # Загрузка и предобработка Excel
+    # Loading and preprocessing Excel
     data = pd.read_excel(file_path)
-    # Здесь ваша специфическая обработка
+    # Here is your specific processing
     return data

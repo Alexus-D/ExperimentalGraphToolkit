@@ -1,2 +1,2 @@
 # __init__.py
-# Позволяет импортировать plot_types как пакет
+# Allows importing plot_types as a package

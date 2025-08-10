@@ -2,7 +2,7 @@
 import pandas as pd
 
 def load_and_preprocess(file_path):
-    # Загрузка и предобработка CSV
+    # Loading and preprocessing CSV
     data = pd.read_csv(file_path)
-    # Здесь ваша специфическая обработка
+    # Here is your specific processing
     return data
