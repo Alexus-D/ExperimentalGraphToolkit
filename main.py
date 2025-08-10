@@ -33,13 +33,13 @@ def main():
 
     loader = data_loaders.get(data_type)
     if not loader:
-        print('Неизвестный тип данных')
+        print('Unknown data type')
         return
     data = loader(data_path)
 
     plot_func = plot_functions.get(plot_type)
     if not plot_func:
-        print('Неизвестный тип графика')
+        print('Unknown plot type')
         return
     plot_func(data, **plot_params)
 
