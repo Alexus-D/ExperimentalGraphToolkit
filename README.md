@@ -1,28 +1,28 @@
 # ExperimentalGraphToolkit
 
-ExperimentalGraphToolkit — это набор утилит для обработки и построения экспериментальных графиков из различных форматов данных.
 
-## Возможности
-- Загрузка и предобработка данных из CSV, Excel, JSON
-- Гибкая архитектура для добавления новых типов графиков и обработок
-- Конфигурирование через файл `config.json`
 
-## Быстрый старт
-1. Установите зависимости:
+## Features
+- Loading and preprocessing data from CSV, Excel, JSON
+- Flexible architecture for adding new types of plots and data processing
+- Configuration via `config.json` file
+
+## Quick Start
+1. Install dependencies:
    ```bash
    pip install pandas matplotlib seaborn
    ```
-2. Настройте `config.json` под ваши данные и нужный тип графика.
-3. Запустите:
+2. Configure `config.json` for your data and desired plot type.
+3. Run:
    ```bash
    python main.py
    ```
 
-## Структура проекта
-- `main.py` — основной управляющий скрипт
-- `plot_types/` — модули для построения разных графиков
-- `data_processing/` — модули для загрузки и предобработки данных
-- `config.json` — конфигурационный файл
+## Project Structure
+- `main.py` — main control script
+- `plot_types/` — modules for different plot types
+- `data_processing/` — modules for loading and preprocessing data
+- `config.json` — configuration file
 
-## Лицензия
-См. файл LICENSE.
+## License
+See LICENSE file.
