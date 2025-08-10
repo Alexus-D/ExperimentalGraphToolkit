@@ -1,0 +1,10 @@
+{
+  "data_type": "csv",
+  "data_path": "data/your_data.csv",
+  "plot_type": "type1",
+  "plot_params": {
+    "x": "X",
+    "y": "Y",
+    "title": "График типа 1"
+  }
+}
