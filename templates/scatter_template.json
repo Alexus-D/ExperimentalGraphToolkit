@@ -1,0 +1,15 @@
+{
+  "name": "ScatterPlot Basic",
+  "description": "Template for basic scatter plot of experimental data.",
+  "data_type": "csv",
+  "plot_type": "type2",
+  "plot_params": {
+    "x": "A",
+    "y": "B",
+    "title": "Basic Scatter Plot"
+  },
+  "preprocessing": {
+    "dropna": false,
+    "filter": null
+  }
+}

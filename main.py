@@ -26,6 +26,19 @@ def main():
     with open('config.json', encoding='utf-8') as f:
         config = json.load(f)
 
+    # If template is specified, load parameters from template file
+    template_name = config.get('template')
+    if template_name:
+        template_path = f'templates/{template_name}'
+        try:
+            with open(template_path, encoding='utf-8') as tf:
+                template = json.load(tf)
+            # Merge template into config (template values override config)
+            config = {**config, **template}
+        except Exception as e:
+            print(f'Failed to load template: {e}')
+            return
+
     data_type = config.get('data_type')
     data_path = config.get('data_path')
     plot_type = config.get('plot_type')

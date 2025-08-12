@@ -1,0 +1,15 @@
+{
+  "name": "LinePlot Basic",
+  "description": "Template for basic line plot of experimental data.",
+  "data_type": "csv",
+  "plot_type": "type1",
+  "plot_params": {
+    "x": "X",
+    "y": "Y",
+    "title": "Basic Line Plot"
+  },
+  "preprocessing": {
+    "dropna": true,
+    "filter": null
+  }
+}
